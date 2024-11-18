@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "282251442928",
+    "project_id": "practice-beeab",
+    "storage_bucket": "practice-beeab.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282251442928:android:179b81862e276502c12035",
+        "android_client_info": {
+          "package_name": "com.example.practice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCno-Xjck9j-sz-iwUtHczSKf3R3HdNSII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
