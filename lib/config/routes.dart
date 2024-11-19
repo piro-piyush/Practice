@@ -4,6 +4,7 @@ import 'package:practice/pages/auth/screens/otp_screen.dart';
 import 'package:practice/pages/auth/screens/reset_password_screen.dart';
 import 'package:practice/pages/auth/screens/sign_in_screen.dart';
 import 'package:practice/pages/auth/screens/sign_up_screen.dart';
+import 'package:practice/pages/home/home_screen.dart';
 
 class Routes {
   static Route? onGenerateRoutes(RouteSettings settings) {
@@ -16,11 +17,12 @@ class Routes {
         return CupertinoPageRoute(
             builder: (context) => const ForgetPasswordScreen());
       case OtpScreen.routeName:
-        return CupertinoPageRoute(
-            builder: (context) => const OtpScreen());
-        case ResetPasswordScreen.routeName:
+        return CupertinoPageRoute(builder: (context) => const OtpScreen());
+      case ResetPasswordScreen.routeName:
         return CupertinoPageRoute(
             builder: (context) => const ResetPasswordScreen());
+      case HomeScreen.routeName:
+        return CupertinoPageRoute(builder: (context) => const HomeScreen());
       default:
         return null;
     }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:practice/pages/auth/screens/otp_screen.dart';
 import 'package:practice/pages/auth/widgets/build_button.dart';
 import 'package:practice/pages/auth/widgets/build_text_field_widget.dart';
 import 'package:practice/pages/auth/widgets/heading_widget.dart';
 import 'package:practice/pages/auth/widgets/label_widget.dart';
+import 'package:practice/pages/home/home_screen.dart';
 
 class ResetPasswordScreen extends StatefulWidget {
   const ResetPasswordScreen({super.key});
@@ -56,9 +56,9 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
             ),
             InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, OtpScreen.routeName);
+                  Navigator.pushNamed(context, HomeScreen.routeName);
                 },
-                child: buildButton(text: "Continue")),
+                child: buildButton(text: "Submit")),
             const SizedBox(
               height: 10,
             ),
