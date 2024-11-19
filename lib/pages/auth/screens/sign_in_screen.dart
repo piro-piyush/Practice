@@ -1,5 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:practice/pages/auth/screens/forget_password_screen.dart';
 import 'package:practice/pages/auth/screens/sign_up_screen.dart';
 import 'package:practice/pages/auth/widgets/build_button.dart';
 import 'package:practice/pages/auth/widgets/build_logo_container_widget.dart';
@@ -19,10 +20,6 @@ class _SignInScreenState extends State<SignInScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   title: const Text("Sign In"),
-      //   centerTitle: true,
-      // ),
       backgroundColor: Colors.white,
       body: SafeArea(
           child: Padding(
@@ -34,7 +31,7 @@ class _SignInScreenState extends State<SignInScreen> {
             const SizedBox(
               height: 15,
             ),
-            labelWidget("Welcome back!"),
+            labelWidget("Welcome back! Log in to access your account."),
             const SizedBox(
               height: 20,
             ),
@@ -92,7 +89,9 @@ class _SignInScreenState extends State<SignInScreen> {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, ForgetPasswordScreen.routeName);
+                  },
                   child: const Text(
                     "Forget Password? ",
                     style: TextStyle(color: Color(0xFF7C8BA0), fontSize: 14 ),

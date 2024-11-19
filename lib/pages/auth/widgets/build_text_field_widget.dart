@@ -16,8 +16,7 @@ class BuildTextField extends StatefulWidget {
   }
 }
 
-class _BuildTextFieldState
-    extends State<BuildTextField> {
+class _BuildTextFieldState extends State<BuildTextField> {
   late bool _obsecureText;
 
   @override
@@ -43,7 +42,8 @@ class _BuildTextFieldState
       child: TextField(
         obscureText: _obsecureText, // Use the state for the visibility toggle
         decoration: InputDecoration(
-          contentPadding: const EdgeInsets.symmetric(vertical: 20,horizontal: 25),
+          contentPadding:
+              const EdgeInsets.symmetric(vertical: 20, horizontal: 25),
           hintText: widget.hintText,
           hintStyle: const TextStyle(color: Color(0xFF7C8BA0)),
           filled: true,
@@ -58,14 +58,17 @@ class _BuildTextFieldState
               width: 1.0,
             ),
           ),
-          suffixIcon: widget.obsecureText?IconButton(
-            icon: Icon(
-              _obsecureText ? Icons.visibility_off : Icons.visibility,
-              color: Colors.blue,
-            ),
-            onPressed: toggleObsecureText, // Toggle visibility on press
-          ):null,
-
+          suffixIcon: widget.obsecureText
+              ? IconButton(
+                  icon: Icon(
+                    _obsecureText
+                        ? Icons.visibility_off_outlined
+                        : Icons.visibility_outlined,
+                    color: const Color(0xFF3B4054),
+                  ),
+                  onPressed: toggleObsecureText, // Toggle visibility on press
+                )
+              : null,
         ),
       ),
     );

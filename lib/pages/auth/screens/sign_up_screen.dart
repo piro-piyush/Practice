@@ -36,7 +36,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               const SizedBox(
                 height: 15,
               ),
-              labelWidget("Welcome back!"),
+              labelWidget("Create your account and start your journey with us today!"),
               const SizedBox(
                 height: 20,
               ),
