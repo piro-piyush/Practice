@@ -56,7 +56,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
             ),
             InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, HomeScreen.routeName);
+                  Navigator.pushNamedAndRemoveUntil(context, HomeScreen.routeName,(route) => false,);
                 },
                 child: buildButton(text: "Submit")),
             const SizedBox(
